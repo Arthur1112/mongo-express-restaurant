@@ -1,5 +1,5 @@
 
-require(dotenv/config)
+require('dotenv/config')
 const express = require('express');
 const mongo = require('mongodb').MongoClient;
 const cors = require('cors');
@@ -33,7 +33,7 @@ mongo.connect(url, option, (err, mongoClient) => {
 
 
 // get
-app.get('/', (req, res) => res.status(200).send('Hey class!'))
+app.get('/', (req, res) => res.status(200).send('Heres my API on AWS'))
 
 // post
 app.post('/', (req, res) => {
